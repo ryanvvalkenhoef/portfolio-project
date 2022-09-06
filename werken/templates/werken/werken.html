@@ -1,0 +1,21 @@
+{% extends 'index.html' %}
+{% block content %}
+{% for werken in werken.all %}
+
+     <div class="col">
+        <div class="card shadow-sm" style="background-color:rgba(255, 255, 255, 0.4);">
+          <a href="{{ werken.url }}"><img src="{{ werken.image.url }}" alt="" title="" style="height:200px;width:100%;object-fit:cover;"><rect width="100%" height="100%" fill="#55595c"/></img>
+
+          <div class="card-body">
+            <h4 style="font-weight:700;text-align:center;">{{ werken.title }}</h4>
+            <p class="card-text">{{ werken.body }}</p>
+            <div class="d-flex justify-content-between align-items-center">
+            </div>
+          </div>
+          </a>
+        </div>
+      </div>
+
+{% endfor %}
+
+{% endblock %}

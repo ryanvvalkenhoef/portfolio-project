@@ -1,0 +1,229 @@
+/* General styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: futura-pt, sans-serif;
+}
+
+html { scroll-behavior: smooth; }
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover { color: #0a0046; }
+
+.section { 
+    text-align: center; 
+    font-weight: 700;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.paragraph, p {
+    line-height: 1.5rem;
+    text-align: left;
+    position: relative;
+    margin: auto 5px;
+    font-size: 1.2rem;
+}
+
+.ornament {
+    margin-top: 10px;
+    width: 70px;
+    height: 5px;
+}
+
+.ornament.black {
+    background: black;
+    border: 2px solid black;
+}
+
+.ornament.white {
+    background: white; 
+    border: 2px solid white;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+lottie-player {
+    margin-bottom: -3.2rem !important;
+    background-size: cover;
+    transform: rotate(180deg);
+}
+
+h2::after {
+    border: solid 4px white;
+    background: white;
+    width: 80px;
+    height: 2px;
+}
+
+/* Header styles */
+#logo, h1 {
+    max-height: 52px;
+    font-size: 1.8rem;
+    letter-spacing: 0.3rem;
+}
+
+/* Tour section */
+#guide-button {
+    font-size: 1.2rem;
+    border: 2px solid #034f84;
+    background: transparent;
+    color: #034f84;
+    margin-top: 20px;
+    padding: 5px 15px 5px 15px;
+    border-radius: 5px;
+}
+
+#guide-button:hover { 
+    color: #096db4;
+    border: 2px solid #096db4;
+ }
+
+/* Typing effect */
+@keyframes typing {
+    from { width: 0 }
+    to { width: 270px; }
+  }
+    
+/* Typewriter cursor effect */
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #077fd4; }
+}
+
+#my-portfolio-text {
+    width: 270px;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid #077fd4; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: auto 5px; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em !important; /* Adjust as needed */
+    margin-left: -1px;
+    animation: 
+        typing 3.5s steps(40, end),
+        blink-caret .75s step-end infinite;
+}
+
+.paragraph.welcome-text { margin-top: 30px; }
+
+/* Welcome section styles */
+.welcome-wrapper {
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    height: 500px;
+    left: 0;
+    top: 0;
+}
+
+.welcome-text {
+    padding-top: 10px;
+    width: 65%;
+}
+
+#welcome-img {
+    min-width: 54%;
+    min-height: 312px;
+    object-fit: contain;
+}
+
+.text-wrapper { margin: auto; }
+
+.text-wrapper > .section {
+    text-align: left;
+    letter-spacing: 0.3rem;
+}
+
+/* Projects section styles */
+.projects-wrapper {
+    background-image: linear-gradient(#041E50, #077fd4);
+    padding: 30px 100px 30px 100px;
+}
+
+.end-container {
+    margin-top: -3rem;
+    width: 100%;
+    height: 100px;
+    background: #077fd4;
+    border-radius: 0px 0px 50% 50%;
+}
+
+/* About me section styles */
+
+.contents {
+    margin: 0 auto;
+    width: 900px;
+    max-width: 100%;
+    padding: 17px;
+    border-radius: 5px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background: rgb(228, 228, 228);
+}
+
+#picture {
+    float: left;
+    min-width: 210px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+/* Contact section styles */
+#contact-form {
+    width: 900px;
+    max-width: 100%;
+    padding: 10px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+#contact > p { margin-top: 30px; }
+
+#contact > p > a { color: #077fd4; }
+
+#contact > p > a:hover { color: #041E50; }
+
+input[type=text], select, textarea {
+    font-size: 1.1rem;
+    font-family: futura-pt, sans-serif;
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+  
+input[type=submit] {
+    font-size: 1.2rem;
+    background-color: white;
+    color: #034f84;
+    padding: 5px 20px;
+    border: 2px solid #034f84;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    color: #077fd4;
+    border: 2px solid #077fd4;
+    background:white;
+}
+
+  /* Footer styles */
+.footer {
+    background-color: #ccdffc;
+    padding: 30px 100px 30px 100px;
+}
+
+.footer > a > span > #logo {
+    font-size: 1.8rem;
+    color: #034f84;
+}
